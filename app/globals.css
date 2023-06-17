@@ -1,27 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.nav-button {
+  @apply text-nav-grey ease-in-out hover:text-black duration-200 relative px-5 py-0.5 before:absolute before:inset-0 before:bg-main-gold before:rounded-full before:-z-10 z-10 before:scale-0 before:opacity-0 before:hover:opacity-100 before:hover:scale-100 before:transition-all before:ease-in-out before:duration-[450ms] before:origin-center delay-75;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.img-wrapper {
+  @apply flex justify-between w-[1440px] h-[250px] mt-16 gap-60;
+}
+
+.img-container {
+  @apply flex-1 flex flex-col justify-end items-center hover:scale-125 ease-in-out duration-[400ms]
 }
