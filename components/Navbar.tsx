@@ -4,7 +4,7 @@ import CustomButton from './CustomButton';
 
 const Navbar = () => {
     return (  
-        <header className='w-full absolute z-10 h-[80px]'>
+        <header className='w-[1440px] z-10 h-[80px] mx-auto'>
             <nav className="w-full h-full flex justify-between items-center sm:px-16 px-10 py-4">
                 <Link href='/' className='flex justify-center items-center'>
                     <Image
