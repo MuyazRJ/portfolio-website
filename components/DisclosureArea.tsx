@@ -12,7 +12,7 @@ export default function DisclosureArea() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[900px] justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 duration-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 duration-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
                 <span className='text-xl'>I'm interested, how do we continue?</span>
                 <ChevronUpIcon
                   className={`${
@@ -38,7 +38,7 @@ export default function DisclosureArea() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[900px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
                 <span className='text-xl'>What happens when I get in contact?</span>
                 <ChevronUpIcon
                   className={`${
@@ -54,7 +54,85 @@ export default function DisclosureArea() {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
+                No.
+              </Disclosure.Panel>
+              </Transition>
+            </>
+          )}
+        </Disclosure>
+        <Disclosure as="div" className="mt-2">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+                <span className='text-xl'>How much will it cost?</span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-8 w-8 text-black`}
+                />
+              </Disclosure.Button>
+              <Transition
+                enter="transition duration-100 ease-out"
+                enterFrom="transform scale-95 opacity-0"
+                enterTo="transform scale-100 opacity-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="transform scale-100 opacity-100"
+                leaveTo="transform scale-95 opacity-0"
+              >
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
+                No.
+              </Disclosure.Panel>
+              </Transition>
+            </>
+          )}
+        </Disclosure>
+        <Disclosure as="div" className="mt-2">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+                <span className='text-xl'>What happens when I get in contact?</span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-8 w-8 text-black`}
+                />
+              </Disclosure.Button>
+              <Transition
+                enter="transition duration-100 ease-out"
+                enterFrom="transform scale-95 opacity-0"
+                enterTo="transform scale-100 opacity-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="transform scale-100 opacity-100"
+                leaveTo="transform scale-95 opacity-0"
+              >
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
+                No.
+              </Disclosure.Panel>
+              </Transition>
+            </>
+          )}
+        </Disclosure>
+        <Disclosure as="div" className="mt-2">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+                <span className='text-xl'>What happens when I get in contact?</span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-8 w-8 text-black`}
+                />
+              </Disclosure.Button>
+              <Transition
+                enter="transition duration-100 ease-out"
+                enterFrom="transform scale-95 opacity-0"
+                enterTo="transform scale-100 opacity-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="transform scale-100 opacity-100"
+                leaveTo="transform scale-95 opacity-0"
+              >
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
                 No.
               </Disclosure.Panel>
               </Transition>

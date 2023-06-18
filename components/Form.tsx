@@ -10,6 +10,8 @@ const Form = () => {
     const [emptyPhone, setEmptyPhone] = useState(false)
     const [emptyEmail, setEmptyEmail] = useState(false)
     const [emptyMessage, setEmptyMessage] = useState(false)
+    const [useAnimation, setAnimation] = useState(false)
+    const [isDisabled, setIsDisabled] = useState(false)
 
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
@@ -32,35 +34,54 @@ const Form = () => {
         setEmptyMessage(false)
     }
 
+    function resetInputs() {
+      setName('')
+      setPhone('')
+      setEmail('')
+      setMessage('')
+      setBusiness('')
+    }
+
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         resetErrors()
+        setIsDisabled(true)
 
         let isError = false
 
         if (name.trim().length === 0) {
             setEmptyName(true)
             isError = true
+            setAnimation(true)
         }
 
         if (phone.trim().length === 0) {
             setEmptyPhone(true)
             isError = true
+            setAnimation(true)
         }
 
         if (email.trim().length === 0) {
             setEmptyEmail(true)
             isError = true
+            setAnimation(true)
         }
 
         if (message.trim().length === 0) {
             setEmptyMessage(true)
             isError = true
+            setAnimation(true)
         }
 
         if (!isError) {
             openModal()
+            resetInputs()
         }
+
+        setTimeout(() => {
+          setAnimation(false)
+          setIsDisabled(false)
+        }, 750)
     }
 
     return ( 
@@ -70,21 +91,21 @@ const Form = () => {
 
             <form action="" className="mt-16 bg-[#F6C84A] max-w-[1440px] flex flex-col p-16 pb-4 pt-12 rounded-[2rem] justify-center items-center gap-6" onSubmit={e => handleSubmit(e)}>
                 <div className="flex justify-between w-full gap-6">
-                    <input type="text" name="name" placeholder="name" className={`input-box ${emptyName ? 'border-2 border-red-500': ''}`} maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
+                    <input type="text" name="name" placeholder="name" className={`input-box ${emptyName ? 'border-2 border-red-500': ''} ${(emptyName && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
                     <input type="text" name="business name" placeholder="business name" className="input-box" maxLength={50} value={business} onChange={e => setBusiness(e.target.value)}/>
                 </div>
 
                 <div className="flex justify-between w-full gap-6">
-                    <input type="text" name="email" placeholder="email" className={`input-box ${emptyEmail ? 'border-2 border-red-500': ''}`} maxLength={100} value={email} onChange={e => setEmail(e.target.value)}/>
-                    <input type="text" name="phone" placeholder="phone" className={`input-box ${emptyPhone ? 'border-2 border-red-500': ''}`} maxLength={50} value={phone} onChange={e => setPhone(e.target.value)}/>
+                    <input type="text" name="email" placeholder="email" className={`input-box ${emptyEmail ? 'border-2 border-red-500': ''} ${(emptyEmail && useAnimation) ? 'animate-wiggle': ''}`} maxLength={100} value={email} onChange={e => setEmail(e.target.value)}/>
+                    <input type="text" name="phone" placeholder="phone" className={`input-box ${emptyPhone ? 'border-2 border-red-500': ''} ${(emptyPhone && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={phone} onChange={e => setPhone(e.target.value)}/>
                 </div>
 
                 <div className="flex w-full">
-                    <textarea name="message" placeholder="message" className={`outline-none flex-1 p-4 rounded-md h-[15rem] resize-none ${emptyMessage ? 'border-2 border-red-500': ''}`} maxLength={1000} value={message} onChange={e => setMessage(e.target.value)}/>
+                    <textarea name="message" placeholder="message" className={`outline-none flex-1 p-4 rounded-md h-[15rem] resize-none ${emptyMessage ? 'border-2 border-red-500': ''} ${(emptyMessage && useAnimation) ? 'animate-wiggle': ''}`} maxLength={1000} value={message} onChange={e => setMessage(e.target.value)}/>
                 </div>
 
                 <div className="">
-                    <input type="submit" className="bg-[#171717] text-white px-20 py-4 rounded-md shadow-lg hover:scale-110 duration-200 cursor-pointer"/>
+                    <input type="submit" className="bg-[#171717] text-white px-20 py-4 rounded-md shadow-lg hover:scale-110 duration-200 cursor-pointer" disabled={isDisabled}/>
                 </div>
             </form>
 
