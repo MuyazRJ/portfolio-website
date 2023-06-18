@@ -4,6 +4,8 @@ import Info from "./Info";
 import Banner from "./Banner";
 import Benefits from "./Benefits";
 import Why from "./Why";
+import Carousel from "./Carousel";
+import Form from "./Form";
 
 export {
     Navbar,
@@ -12,5 +14,7 @@ export {
     Banner,
     Benefits,
     Why,
+    Carousel,
+    Form,
     
 }
