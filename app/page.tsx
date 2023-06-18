@@ -1,4 +1,4 @@
-import { Banner, Benefits, Carousel, Form, Hero, Info, Why } from '@/components'
+import { Banner, Benefits, Carousel, DisclosureArea, Form, Hero, Info, Why } from '@/components'
 import Image from 'next/image'
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Why/>
       <Carousel/>
       <Form/>
+      <DisclosureArea/>
    </main>
   )
 }

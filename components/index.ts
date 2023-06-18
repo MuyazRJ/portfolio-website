@@ -6,6 +6,7 @@ import Benefits from "./Benefits";
 import Why from "./Why";
 import Carousel from "./Carousel";
 import Form from "./Form";
+import DisclosureArea from "./DisclosureArea";
 
 export {
     Navbar,
@@ -16,5 +17,6 @@ export {
     Why,
     Carousel,
     Form,
+    DisclosureArea,
     
 }

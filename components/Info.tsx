@@ -3,7 +3,7 @@
 const Info = () => {
     return (  
         <div className="max-w-[1440px] flex flex-col mx-auto relative">
-            <h1 className="font-bold text-7xl self-center mb-[7rem] mt-[10rem] text-[#1c1c1c]">Grow your business professionally</h1>
+            <h1 className="font-bold text-7xl self-center mb-[7rem] mt-[14rem] text-[#1c1c1c]">Grow your business professionally</h1>
 
             <div className="flex w-full justify-between p-4">
                 <div className="flex flex-col gap-10 max-w-[50%] mr-[1%] justify-center">
