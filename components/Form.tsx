@@ -3,7 +3,9 @@
 import { FormEvent } from "react";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
+
 import SpaceParticles from "./SpaceParticles";
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -13,6 +15,7 @@ const Form = () => {
     const [emptyMessage, setEmptyMessage] = useState(false)
     const [useAnimation, setAnimation] = useState(false)
     const [isDisabled, setIsDisabled] = useState(false)
+    const [isError, setIsError] = useState(false)
 
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
@@ -25,7 +28,7 @@ const Form = () => {
       }
     
     function openModal() {
-    setIsOpen(true)
+      setIsOpen(true)
     }
 
     function resetErrors() {
@@ -43,46 +46,55 @@ const Form = () => {
       setBusiness('')
     }
 
+    let err = false;
+
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         resetErrors()
         setIsDisabled(true)
-
-        let isError = false
+        setIsError(false)
 
         if (name.trim().length === 0) {
             setEmptyName(true)
-            isError = true
+            err = true
             setAnimation(true)
         }
 
         if (phone.trim().length === 0) {
             setEmptyPhone(true)
-            isError = true
+            err = true
             setAnimation(true)
         }
 
         if (email.trim().length === 0) {
             setEmptyEmail(true)
-            isError = true
+            err = true
             setAnimation(true)
         }
 
         if (message.trim().length === 0) {
             setEmptyMessage(true)
-            isError = true
+            err = true
             setAnimation(true)
         }
 
-        if (!isError) {
-            openModal()
+        if (!err) {
             resetInputs()
+            emailjs.sendForm('service_kv4d8oj', 'template_634nvaa', e.currentTarget, 'msE8YJu_5Hmzmqs-Z')
+              .then((result) => {
+                  setIsDisabled(false)
+                  openModal()
+              }, (error) => {
+                  setIsError(true)
+                  openModal()
+                  setIsDisabled(false)
+              });
+        } else {
+          setTimeout(() => {
+            setAnimation(false)
+            setIsDisabled(false)
+          }, 750)
         }
-
-        setTimeout(() => {
-          setAnimation(false)
-          setIsDisabled(false)
-        }, 750)
     }
 
     return ( 
@@ -139,11 +151,11 @@ const Form = () => {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Enquiry Sent
+                    {!isError ? "Enquiry Sent": "Enquiry failed"}
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Your enquiry has been successfully submitted. We'll respond as soon as we have reviewed your request.
+                      {!isError ? "Your enquiry has been successfully submitted. We'll respond as soon as we have reviewed your request.": "There was an issue submitting your enquiry. Please try again."}
                     </p>
                   </div>
 

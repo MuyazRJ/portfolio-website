@@ -5,31 +5,31 @@ import { ChevronUpIcon } from '@heroicons/react/20/solid'
 
 export default function DisclosureArea() {
   return (
-    <div className="w-full px-4 pt-16 flex flex-col items-center mb-[200px] ">
-      <h2 className='font-bold text-7xl self-center mb-[4rem] text-[#1c1c1c]'>Got a question?</h2>
-
-      <div className="w-[full] rounded-2xl bg-[#F6C84A] p-2 shadow-lg">
+    <div className="w-full px-4 pt-16 flex flex-col items-center mb-[200px] max-w-[1200px] mx-auto">
+      <h2 className='font-bold text-7xl self-center mb-[4rem] text-[#1c1c1c] text-center'>Got a question?</h2>
+      
+      <div className="w-[full] rounded-2xl bg-[#303030] p-2 shadow-lg relative">
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100 duration-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="disclosure-box">
                 <span className='text-xl'>I'm interested, how do we continue?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-8 w-8 text-black`}
+                  } h-8 w-8 text-black duration-300`}
                 />
               </Disclosure.Button>
               <Transition
-                enter="transition duration-300 ease-out"
-                enterFrom="transform scale-95 opacity-0"
+                enter="transition duration-[400ms] ease-out"
+                enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-300 ease-out"
+                leave="transition duration-[320ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
-                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.
+              <Disclosure.Panel className="disclosure-text duration-300">
+                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked 
               </Disclosure.Panel>
               </Transition>
             </>
@@ -38,7 +38,7 @@ export default function DisclosureArea() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="disclosure-box">
                 <span className='text-xl'>What happens when I get in contact?</span>
                 <ChevronUpIcon
                   className={`${
@@ -47,15 +47,15 @@ export default function DisclosureArea() {
                 />
               </Disclosure.Button>
               <Transition
-                enter="transition duration-100 ease-out"
-                enterFrom="transform scale-95 opacity-0"
+                enter="transition duration-[400ms] ease-out"
+                enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-75 ease-out"
+                leave="transition duration-[320ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
-                No.
+              <Disclosure.Panel className="disclosure-text duration-300">
+                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked jk y ghj fghjfghj fg
               </Disclosure.Panel>
               </Transition>
             </>
@@ -64,7 +64,7 @@ export default function DisclosureArea() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="disclosure-box">
                 <span className='text-xl'>How much will it cost?</span>
                 <ChevronUpIcon
                   className={`${
@@ -73,15 +73,15 @@ export default function DisclosureArea() {
                 />
               </Disclosure.Button>
               <Transition
-                enter="transition duration-100 ease-out"
-                enterFrom="transform scale-95 opacity-0"
+                enter="transition duration-[400ms] ease-out"
+                enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-75 ease-out"
+                leave="transition duration-[320ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
-                No.
+              <Disclosure.Panel className="disclosure-text duration-300">
+                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked s
               </Disclosure.Panel>
               </Transition>
             </>
@@ -90,7 +90,7 @@ export default function DisclosureArea() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="disclosure-box">
                 <span className='text-xl'>What happens when I get in contact?</span>
                 <ChevronUpIcon
                   className={`${
@@ -99,15 +99,15 @@ export default function DisclosureArea() {
                 />
               </Disclosure.Button>
               <Transition
-                enter="transition duration-100 ease-out"
-                enterFrom="transform scale-95 opacity-0"
+                enter="transition duration-[400ms] ease-out"
+                enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-75 ease-out"
+                leave="transition duration-[320ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
-                No.
+              <Disclosure.Panel className="disclosure-text duration-300">
+                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked sha
               </Disclosure.Panel>
               </Transition>
             </>
@@ -116,7 +116,7 @@ export default function DisclosureArea() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-[1000px] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center">
+              <Disclosure.Button className="disclosure-box">
                 <span className='text-xl'>What happens when I get in contact?</span>
                 <ChevronUpIcon
                   className={`${
@@ -125,15 +125,15 @@ export default function DisclosureArea() {
                 />
               </Disclosure.Button>
               <Transition
-                enter="transition duration-100 ease-out"
-                enterFrom="transform scale-95 opacity-0"
+                enter="transition duration-[400ms] ease-out"
+                enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-75 ease-out"
+                leave="transition duration-[320ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-black">
-                No.
+              <Disclosure.Panel className="disclosure-text duration-300">
+                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked sha
               </Disclosure.Panel>
               </Transition>
             </>
