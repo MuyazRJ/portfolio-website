@@ -5,10 +5,10 @@ import { ChevronUpIcon } from '@heroicons/react/20/solid'
 
 export default function DisclosureArea() {
   return (
-    <div className="w-full px-4 pt-16 flex flex-col items-center mb-[200px]">
+    <div className="w-full px-4 pt-16 flex flex-col items-center mb-[200px] ">
       <h2 className='font-bold text-7xl self-center mb-[4rem] text-[#1c1c1c]'>Got a question?</h2>
 
-      <div className="w-[full] rounded-2xl bg-[#F6C84A] p-2">
+      <div className="w-[full] rounded-2xl bg-[#F6C84A] p-2 shadow-lg">
         <Disclosure>
           {({ open }) => (
             <>

@@ -1,7 +1,9 @@
+"use client"
+
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const SpaceParticles = () => {
+const SpaceParticles = ({ id }: any) => {
     const particlesInit = async (main: any) => {
         console.log(main);
     
@@ -14,7 +16,7 @@ const SpaceParticles = () => {
     return ( 
         <div>
             <Particles
-                id="tsparticles"
+                id={id}
                 init={particlesInit}
                 style={{position:'absolute', inset:0, zIndex:-1}}
                 width="100%"
@@ -23,10 +25,10 @@ const SpaceParticles = () => {
                     fullScreen:false,
                     "particles": {
                       "number": {
-                        "value": 150,
+                        "value": 100,
                         "density": {
                           "enable": true,
-                          "value_area": 275
+                          "value_area": 175
                         }
                       },
                       "color": {
@@ -99,9 +101,9 @@ const SpaceParticles = () => {
                       },
                       "modes": {
                         "grab": {
-                          "distance": 120,
+                          "distance": 0,
                           "line_linked": {
-                            "opacity": 1
+                            "opacity": 0
                           }
                         },
                         "bubble": {

@@ -3,6 +3,7 @@
 import { FormEvent } from "react";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
+import SpaceParticles from "./SpaceParticles";
 
 const Form = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -85,9 +86,10 @@ const Form = () => {
     }
 
     return ( 
-        <div className="flex flex-col w-full mt-[10rem] relative justify-center items-center pb-[100px] shadow-xl bg-[#171717]">
-            <h2 className="font-bold text-7xl max-w-[70%] text-white text-center mt-14">We will show you what works</h2>
-            <h4 className="text-5xl font-bold text-gray-300 mt-5">(For Free)</h4>
+        <div className="flex flex-col w-full mt-[10rem] relative justify-center items-center pb-[100px] shadow-xl bg-[#171717] z-10">
+            <SpaceParticles id="form"/>
+            <h2 className="font-bold text-7xl max-w-[70%] text-white text-center mt-14 [text-shadow:_0_0_10px_rgb(255_255_255_/_44%)]">We will show you what works</h2>
+            <h4 className="text-5xl font-bold text-gray-300 mt-5 [text-shadow:_0_0_10px_rgb(255_255_255_/_34%)]">(For Free)</h4>
 
             <form action="" className="mt-16 bg-[#F6C84A] max-w-[1440px] flex flex-col p-16 pb-4 pt-12 rounded-[2rem] justify-center items-center gap-6" onSubmit={e => handleSubmit(e)}>
                 <div className="flex justify-between w-full gap-6">
