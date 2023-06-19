@@ -99,7 +99,6 @@ const Form = () => {
 
     return ( 
         <div className="flex flex-col w-full mt-[10rem] relative justify-center items-center pb-[100px] shadow-xl bg-[#171717] z-10">
-            <SpaceParticles id="form"/>
             <h2 className="font-bold text-7xl max-w-[70%] text-white text-center mt-14 [text-shadow:_0_0_10px_rgb(255_255_255_/_44%)]">We will show you what works</h2>
             <h4 className="text-5xl font-bold text-gray-300 mt-5 [text-shadow:_0_0_10px_rgb(255_255_255_/_34%)]">(For Free)</h4>
 

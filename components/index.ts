@@ -7,6 +7,7 @@ import Why from "./Why";
 import Carousel from "./Carousel";
 import Form from "./Form";
 import DisclosureArea from "./DisclosureArea";
+import Footer from "./Footer";
 
 
 export {
@@ -19,5 +20,5 @@ export {
     Carousel,
     Form,
     DisclosureArea,
-
+    Footer
 }

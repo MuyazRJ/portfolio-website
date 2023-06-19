@@ -1,6 +1,10 @@
-import Link from 'next/link';
+"use client"
+
 import Image from 'next/image';
 import CustomButton from './CustomButton';
+import Link from 'next/link';
+
+import { Link as ScrollLink } from "react-scroll/modules";
 
 const Navbar = () => {
     return (  
@@ -15,11 +19,11 @@ const Navbar = () => {
                         height={16}
                     />
                 </Link>
-
+             
                 <ul className='flex gap-16 flex-1 justify-center'>
-                    <li className='nav-button'>Home</li>
-                    <li className='nav-button'>Services</li>
-                    <li className='nav-button'>Contact</li>
+                    <li className='nav-button'><ScrollLink to='hero' offset={-100} smooth={true} duration={500}>Home</ScrollLink></li>
+                    <li className='nav-button'><ScrollLink to='benefits' offset={-100} smooth={true} duration={1000}>Services</ScrollLink></li>
+                    <li className='nav-button'><ScrollLink to='form' offset={-100} smooth={true} duration={1500}>Contact</ScrollLink></li>
                 </ul>
 
                 <CustomButton
