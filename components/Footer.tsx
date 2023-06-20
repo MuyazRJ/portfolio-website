@@ -22,9 +22,9 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col gap-6 text-lg">
                         <h3 className="">Apollo</h3>
-                        <Link to="form" smooth={true} duration={2000} className="text-gray-500 cursor-pointer">Contact us</Link>
-                        <Link to="carousel" smooth={true} duration={1000} className="text-gray-500 cursor-pointer">Our Work</Link>
-                        <Link to="hero" smooth={true} duration={1000} offset={-140} className="text-gray-500 cursor-pointer">Landing</Link>
+                        <Link to="form" smooth={true} duration={900} className="text-gray-500 cursor-pointer">Contact us</Link>
+                        <Link to="carousel" smooth={true} duration={750} offset={-70} className="text-gray-500 cursor-pointer">Our Work</Link>
+                        <Link to="hero" smooth={true} duration={2000} offset={-140} className="text-gray-500 cursor-pointer">Landing</Link>
                     </div>
                 </div>
             </div>

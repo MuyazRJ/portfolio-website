@@ -24,7 +24,7 @@ export default function DisclosureArea() {
                 enter="transition duration-[400ms] ease-out"
                 enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-[320ms] ease-out"
+                leave="transition duration-[300ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
@@ -50,7 +50,7 @@ export default function DisclosureArea() {
                 enter="transition duration-[400ms] ease-out"
                 enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-[320ms] ease-out"
+                leave="transition duration-[300ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
@@ -76,7 +76,7 @@ export default function DisclosureArea() {
                 enter="transition duration-[400ms] ease-out"
                 enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-[320ms] ease-out"
+                leave="transition duration-[300ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
@@ -102,7 +102,7 @@ export default function DisclosureArea() {
                 enter="transition duration-[400ms] ease-out"
                 enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-[320ms] ease-out"
+                leave="transition duration-[300ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
@@ -128,7 +128,7 @@ export default function DisclosureArea() {
                 enter="transition duration-[400ms] ease-out"
                 enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
-                leave="transition duration-[320ms] ease-out"
+                leave="transition duration-[300ms] ease-out"
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >

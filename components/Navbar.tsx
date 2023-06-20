@@ -8,8 +8,8 @@ import { Link as ScrollLink } from "react-scroll/modules";
 
 const Navbar = () => {
     return (  
-        <header className='w-[1440px] z-10 h-[80px] mx-auto'>
-            <nav className="w-full h-full flex justify-between items-center py-4">
+        <header className='w-[full] h-[80px] mx-auto absolute inset-0 bg-[#171717] flex justify-center'>
+            <nav className="w-[1440px] h-full flex justify-between items-center py-4">
                 <Link href='/' className='flex justify-center items-center'>
                     <Image
                         src="/logo.png"
@@ -25,12 +25,14 @@ const Navbar = () => {
                     <li className='nav-button'><ScrollLink to='benefits' offset={-100} smooth={true} duration={1000}>Services</ScrollLink></li>
                     <li className='nav-button'><ScrollLink to='form' offset={-100} smooth={true} duration={1500}>Contact</ScrollLink></li>
                 </ul>
-
-                <CustomButton
-                    title='Request My Free Consultation'
-                    btnType='button'
-                    containerStyles='rounded-[8px] bg-main-gold min-w-[130px] px-4 py-3 text-bold hover:bg-transparent border-4 hover:border-main-gold ease-in duration-200 border-transparent'
-                />
+                
+                <ScrollLink to="form" smooth={true} duration={1550}>
+                    <CustomButton
+                        title='Request My Free Consultation'
+                        btnType='button'
+                        containerStyles='rounded-[8px] bg-main-gold min-w-[130px] px-4 py-3 text-bold hover:bg-transparent border-4 hover:border-main-gold ease-in duration-200 border-transparent'
+                    />
+                </ScrollLink>
             </nav>
         </header>
     );
