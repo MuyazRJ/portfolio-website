@@ -6,9 +6,18 @@ import Lottie from "lottie-react";
 import animationData from './dEYJ1bBxVU.json'
 
 const Hero = () => {
+    const optionss = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    }
+
     return (
         <div className="relative w-[100vw] h-[100vh] items-center justify-center flex">
-            <Lottie animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" style={{width:'100vw'}}/>
+            <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}}/>
             <div className="flex max-w-[1440px] flex-row relative gap-5 mx-auto">
                 <div className="flex flex-col h-full min-w-[750px] mr-[400px]">
                     <h1 className="text-8xl text-white">Get More <br/><span className="font-bold">Leads</span> and <span className="font-bold">Sales</span></h1>
