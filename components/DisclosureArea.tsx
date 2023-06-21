@@ -43,7 +43,7 @@ export default function DisclosureArea() {
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-8 w-8 text-black`}
+                  } h-8 w-8 text-black duration-300`}
                 />
               </Disclosure.Button>
               <Transition
@@ -69,7 +69,7 @@ export default function DisclosureArea() {
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-8 w-8 text-black`}
+                  } h-8 w-8 text-black duration-300`}
                 />
               </Disclosure.Button>
               <Transition
@@ -95,7 +95,7 @@ export default function DisclosureArea() {
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-8 w-8 text-black`}
+                  } h-8 w-8 text-black duration-300`}
                 />
               </Disclosure.Button>
               <Transition
@@ -121,7 +121,7 @@ export default function DisclosureArea() {
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
-                  } h-8 w-8 text-black`}
+                  } h-8 w-8 text-black duration-300`}
                 />
               </Disclosure.Button>
               <Transition

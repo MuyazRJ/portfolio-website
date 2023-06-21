@@ -6,11 +6,12 @@ import Link from 'next/link';
 
 import { Link as ScrollLink } from "react-scroll/modules";
 
+
 const Navbar = () => {
     return (  
-        <header className='w-[full] h-[80px] mx-auto absolute inset-0 bg-[#171717] flex justify-center'>
-            <nav className="w-[1440px] h-full flex justify-between items-center py-4">
-                <Link href='/' className='flex justify-center items-center'>
+        <header className='w-[full] h-[80px] mx-auto inset-0 bg-main-black flex justify-center z-20 fixed'>
+            <nav className="w-full h-full flex justify-between items-center py-4">
+                <Link href='/' className='flex justify-center items-center ml-10'>
                     <Image
                         src="/logo.png"
                         alt='apollo logo'
@@ -30,7 +31,7 @@ const Navbar = () => {
                     <CustomButton
                         title='Request My Free Consultation'
                         btnType='button'
-                        containerStyles='rounded-[8px] bg-main-gold min-w-[130px] px-4 py-3 text-bold hover:bg-transparent border-4 hover:border-main-gold ease-in duration-200 border-transparent'
+                        containerStyles='rounded-[8px] bg-main-gold min-w-[130px] px-4 py-3 text-bold hover:bg-transparent border-4 hover:border-main-gold ease-in duration-200 border-transparent mr-10'
                     />
                 </ScrollLink>
             </nav>

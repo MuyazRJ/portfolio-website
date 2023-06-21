@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'main-gold': '#FBB03B',
-        'nav-grey': '#626262'
+        'main-gold': '#EFB55A',
+        'nav-grey': '#626262',
+        'main-black': '#1A1A1A'
       },
       keyframes: {
         wiggle: {

@@ -9,10 +9,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Epilogue', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .nav-button {
-  @apply text-white ease-in-out hover:text-black duration-200 relative px-5 py-0.5 before:absolute before:inset-0 before:bg-main-gold before:rounded-full before:-z-10 z-10 before:scale-0 before:opacity-0 before:hover:opacity-100 before:hover:scale-100 before:transition-all before:ease-in-out before:duration-[450ms] before:origin-center delay-75;
+  @apply text-white ease-in-out hover:text-black duration-200 cursor-pointer relative px-5 py-0.5 before:absolute before:inset-0 before:bg-main-gold before:rounded-full before:-z-10 z-10 before:scale-0 before:opacity-0 before:hover:opacity-100 before:hover:scale-100 before:transition-all before:ease-in-out before:duration-[450ms] before:origin-center delay-75 text-lg;
 }
 
 .img-wrapper {
@@ -20,7 +21,7 @@
 }
 
 .img-container {
-  @apply flex-1 flex flex-col justify-end items-center hover:scale-125 ease-in-out duration-[400ms]
+  @apply flex-1 flex flex-col justify-end items-center hover:scale-125 ease-in-out duration-[400ms];
 }
 
 .input-box {
