@@ -28,12 +28,12 @@ const Navbar = () => {
     return (  
         <header className='w-[full] h-[80px] mx-auto inset-0 bg-main-black flex justify-center z-20 fixed'>
             <nav className="w-full h-full flex justify-between items-center py-4">
-                <Link href='/' className='flex justify-center items-center ml-10'>
+                <Link href='/' className='flex justify-start items-start ml-10 min-w-[150px]'>
                     <Image
                         src="/logo.png"
                         alt='apollo logo'
                         className='object-contain'
-                        width={83}
+                        width={68}
                         height={16}
                     />
                 </Link>
@@ -55,9 +55,9 @@ const Navbar = () => {
                 </div>
 
                 <div className='lg:hidden flex h-[70%] w-[4em] flex-col items-center justify-between cursor-pointer mr-10' onClick={handleClick}>
-                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-45 h-[.5em] w-[2.7em] translate-y-[0.72rem] z-20' : 'h-[.5em] w-[2.7em]'}`}/>
-                    <div className={`bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? '' : 'h-[.5em] w-[1.7em]'}`}/>
-                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-[-45deg] h-[.5em] w-[2.7em] translate-y-[-1rem] z-20' : 'h-[.5em] w-[1em]'}`}/>
+                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-45 h-[.4em] w-[2.7em] translate-y-[0.72rem] z-20' : 'h-[.4em] w-[2.7em]'}`}/>
+                    <div className={`bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? '' : 'h-[.4em] w-[1.7em]'}`}/>
+                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-[-45deg] h-[.4em] w-[2.7em] translate-y-[-1rem] z-20' : 'h-[.4em] w-[1em]'}`}/>
                 </div>
 
                 <div className={`lg:hidden ${menuIsOpen ? 'absolute h-[100vh] w-[100vw] inset-0' : 'hidden' }`}>

@@ -8,8 +8,6 @@ import Carousel from "./Carousel";
 import Form from "./Form";
 import DisclosureArea from "./DisclosureArea";
 import Footer from "./Footer";
-import NavbarMenu from "./NavbarMenu";
-
 
 export {
     Navbar,
@@ -22,5 +20,4 @@ export {
     Form,
     DisclosureArea,
     Footer,
-    NavbarMenu
 }
