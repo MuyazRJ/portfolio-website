@@ -35,3 +35,7 @@
 .disclosure-box {
   @apply flex max-w-[1100px] w-[80vw] justify-between rounded-lg bg-white duration-200 px-4 py-2 text-left text-sm font-medium text-black hover:bg-gray-100  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 items-center;
 }
+
+.nav-button-menu {
+  @apply text-white hover:text-main-gold text-6xl cursor-pointer;
+}

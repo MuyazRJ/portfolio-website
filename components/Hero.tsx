@@ -2,15 +2,20 @@
 
 import CustomButton from "./CustomButton";
 import { Link } from "react-scroll/modules";
-import Lottie from "lottie-react";
-import animationData from '../animations/landing.json'
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import animationData from '../animations/landing_animation_fluid.json'
 import { useEffect, useRef } from "react";
 
 const Hero = () => {
+    const landingRef = useRef<LottieRefCurrentProps>(null)
+
+    useEffect(() => {
+        landingRef.current?.setSpeed(0.5)
+    }, [])
 
     return (
         <div className="relative w-[100vw] h-[100vh] items-center xl:justify-center flex">
-            <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}}/>
+            <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}} lottieRef={landingRef}/>
             <div className="flex max-w-[90vw] flex-row relative gap-5">
                 <div className="flex flex-col h-full min-w-[750px] xl:mr-[30vw] mt-[10vh] pl-10">
                     <h1 className="text-9xl text-white">Get More <br/><span className="font-bold">Leads</span> and <span className="font-bold">Sales</span></h1>

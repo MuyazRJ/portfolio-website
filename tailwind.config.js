@@ -17,10 +17,21 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '40%': { transform: 'translateX(4px)' },
           '100%': { transform: 'translateX(-4px)' },
+        },
+        entry: {
+          '0%' : { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        leave: {
+          '100%' : { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(0)' },
         }
+        
       },
       animation: {
         wiggle: 'wiggle 0.18s 2',
+        entry: 'entry 1s',
+        leave: 'leave 0.5s'
       }
     },
   },
