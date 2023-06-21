@@ -16,7 +16,7 @@ const Banner = () => {
                 <CustomButton
                     title='Request My Free Consultation'
                     btnType='button'
-                    containerStyles='rounded-[8px] bg-main-gold min-w-[130px] max-w-[279px] max-h-[60px] px-4 py-3 text-bold hover:bg-transparent border-4 hover:border-main-gold ease-in duration-200 border-transparent mb-10 hover:text-white'
+                    containerStyles='rounded-[8px] bg-main-gold min-w-[130px] max-w-[279px] max-h-[60px] px-5 py-4 text-bold hover:bg-white ease-in duration-200 border-transparent mb-10'
                 />
             </ScrollLink>
             </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
                     <CustomButton
                         title='Request My Free Consultation'
                         btnType='button'
-                        containerStyles='rounded-[8px] bg-main-gold min-w-[130px] px-4 py-3 text-bold hover:bg-transparent border-4 hover:border-main-gold ease-in duration-200 border-transparent mr-10'
+                        containerStyles='rounded-[8px] bg-main-gold min-w-[130px] px-4 py-4 text-bold hover:bg-white ease-in duration-200 border-transparent mr-10'
                     />
                 </ScrollLink>
             </nav>
