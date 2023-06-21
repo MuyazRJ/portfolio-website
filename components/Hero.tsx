@@ -9,10 +9,10 @@ import { useEffect, useRef } from "react";
 const Hero = () => {
 
     return (
-        <div className="relative w-[100vw] h-[100vh] items-center justify-center flex">
+        <div className="relative w-[100vw] h-[100vh] items-center xl:justify-center flex">
             <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}}/>
-            <div className="flex max-w-[1640px] flex-row relative gap-5 mx-auto">
-                <div className="flex flex-col h-full min-w-[750px] mr-[30vw] mt-[15vh]">
+            <div className="flex max-w-[1640px] flex-row relative gap-5">
+                <div className="flex flex-col h-full min-w-[750px] xl:mr-[30vw] mt-[15vh] pl-10">
                     <h1 className="text-8xl text-[6.5rem] text-white">Get More <br/><span className="font-bold">Leads</span> and <span className="font-bold">Sales</span></h1>
 
                     <p className="text-xl mt-10 text-white">Request a free consultation, and we'll help you reach your<br/>dream revenue figures. With Apollo, you will be rest assured <br/>that your business will skyrocket.</p>
