@@ -3,7 +3,7 @@
 import CustomButton from "./CustomButton";
 import { Link } from "react-scroll/modules";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
-import animationData from '../animations/blue1.json'
+import animationData from '../animations/landing.json'
 import { useEffect, useRef } from "react";
 
 const Hero = () => {
