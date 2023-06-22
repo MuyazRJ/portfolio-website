@@ -102,7 +102,7 @@ const Form = () => {
             <h2 className="font-bold md:text-7xl max-w-[70%] text-white text-center mt-14 [text-shadow:_0_0_10px_rgb(255_255_255_/_44%)] text-5xl">We will show you what works</h2>
             <h4 className="md:text-5xl font-bold text-gray-300 mt-5 [text-shadow:_0_0_10px_rgb(255_255_255_/_34%)] text-4xl">(For Free)</h4>
 
-            <form action="" className="mt-16 bg-[#F6C84A] max-w-[1440px] flex flex-col sm:p-16 pb-4 pt-12 rounded-[2rem] justify-center items-center gap-6 p-8" onSubmit={e => handleSubmit(e)}>
+            <form action="" className="mt-16 bg-[#F6C84A] max-w-[1440px] flex flex-col sm:px-16 pb-4 pt-12 rounded-[2rem] justify-center items-center gap-6 p-8" onSubmit={e => handleSubmit(e)}>
                 <div className="flex justify-between w-full gap-6 sm:flex-row flex-col">
                     <input type="text" name="name" placeholder="name" className={`input-box ${emptyName ? 'border-2 border-red-500': ''} ${(emptyName && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
                     <input type="text" name="business name" placeholder="business name" className="input-box" maxLength={50} value={business} onChange={e => setBusiness(e.target.value)}/>

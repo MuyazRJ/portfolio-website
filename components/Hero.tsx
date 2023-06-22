@@ -28,7 +28,7 @@ const Hero = () => {
                             <CustomButton
                                 title='Request My Free Consultation'
                                 btnType='button'
-                                containerStyles='rounded-[12px] bg-white min-w-[130px] md:px-10 md:py-6 px-4 py-4 font-bold hover:bg-main-gold border-4 ease-in duration-200 border-transparent sm:mt-14 mt-4 sm:text-xl'
+                                containerStyles='rounded-[12px] bg-white min-w-[130px] md:px-10 md:py-6 px-4 py-4 font-bold hover:bg-main-gold border-4 ease-in duration-200 border-transparent sm:mt-14 mt-8 sm:text-xl'
                             />
                         </Link>
                         <Link to="info" smooth={true} duration={1000}>
