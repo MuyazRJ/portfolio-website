@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'md1': '822px',
+        // => @media (min-width: 992px) { ... }
+      },
       colors: {
         'main-gold': '#EFB55A',
         'nav-grey': '#626262',

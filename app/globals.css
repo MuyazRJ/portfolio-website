@@ -18,15 +18,15 @@
 }
 
 .img-wrapper {
-  @apply flex justify-between w-[1440px] h-[250px] mt-16 gap-60;
+  @apply flex justify-between 2xl:w-[1440px] h-[250px] md:mt-16 xl:gap-60 xl:w-[1000px] lg:w-[900px] lg:gap-[10rem] md:w-[650px] md:gap-[7.5rem] sm:w-[500px] sm:gap-20 flex-wrap gap-8 mt-6;
 }
 
 .img-container {
-  @apply flex-1 flex flex-col justify-end items-center hover:scale-125 ease-in-out duration-[400ms];
+  @apply flex-1 flex flex-col justify-end items-center sm:hover:scale-125 ease-in-out duration-[400ms];
 }
 
 .input-box {
-  @apply p-4 rounded-md outline-none w-[20rem];
+  @apply p-4 rounded-md outline-none md1:w-[20rem] md:w-[17rem] sm:w-[12rem] w-[18rem];
 }
 
 .disclosure-text {
@@ -39,4 +39,8 @@
 
 .nav-button-menu {
   @apply text-white hover:text-main-gold text-6xl cursor-pointer;
+}
+
+.benefits-sizing {
+  @apply md:flex-row flex-col-reverse;
 }

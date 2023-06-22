@@ -6,14 +6,14 @@ import { Link } from "react-scroll/modules";
 
 const Footer = () => {
     return ( 
-        <div className="flex mt-10 border-t border-gray-100">
-            <div className="flex flex-wrap px-10 py-10 gap-5 justify-between flex-1">
-                <div className="flex flex-col justify-start items-start gap-6">
+        <div className="flex mt-10 border-t border-gray-100 md:flex-row flex-col">
+            <div className="flex flex-wrap px-10 py-10 gap-20 md:justify-between flex-1">
+                <div className="flex flex-col md:justify-start items-start gap-6">
                     <Image src="/logo.png" alt='apollo logo' className='object-contain' width={83} height={16}/>
                     <p className="text-base text-gray-700">Apollo 2023 <br/> All rights reserved &copy;</p>
                 </div>
 
-                <div className="flex mr-20 gap-40">
+                <div className="flex mr-20 md:gap-40 flex-wrap gap-10">
                     <div className="flex flex-col gap-6 text-lg mr-6">
                         <h3 className="">About</h3>
                         <Link to="info" smooth={true} duration={2000} className="text-gray-500 cursor-pointer">How it works</Link>

@@ -14,7 +14,7 @@ const Hero = () => {
     }, [])
 
     return (
-        <div className="relative w-[100vw] h-[100vh] items-center xl:justify-center flex">
+        <div className="relative w-[100vw] min-h-[100vh] items-center xl:justify-center flex">
             <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}} lottieRef={landingRef}/>
             <div className="flex max-w-[90vw] flex-row relative gap-5">
                 <div className="flex flex-col h-full xl:mr-[30vw] mt-[10vh] pl-10">
