@@ -28,15 +28,16 @@ const Navbar = () => {
     return (  
         <header className='w-[full] h-[80px] mx-auto inset-0 bg-main-black flex justify-center z-20 fixed'>
             <nav className="w-full h-full flex justify-between items-center py-4">
-                <Link href='/' className='flex justify-start items-start ml-10 min-w-[150px]'>
+                <div className='relative lg:w-[68px] flex items-center justify-center w-[48px] ml-4 lg:ml-10'><Link href='/' className=''>
                     <Image
-                        src="/logo.png"
+                        src="/nav_logo.png"
                         alt='apollo logo'
                         className='object-contain'
                         width={68}
                         height={16}
                     />
-                </Link>
+                </Link></div>
+                
              
                 <ul className='gap-16 flex-1 justify-center hidden lg:flex'>
                     <li className='nav-button'><ScrollLink to='hero' offset={-100} smooth={true} duration={500}>Home</ScrollLink></li>
@@ -54,10 +55,10 @@ const Navbar = () => {
                     </ScrollLink>
                 </div>
 
-                <div className='lg:hidden flex h-[70%] w-[4em] flex-col items-center justify-between cursor-pointer mr-10' onClick={handleClick}>
-                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-45 h-[.4em] w-[2.7em] translate-y-[0.72rem] z-20' : 'h-[.4em] w-[2.7em]'}`}/>
-                    <div className={`bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? '' : 'h-[.4em] w-[1.7em]'}`}/>
-                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-[-45deg] h-[.4em] w-[2.7em] translate-y-[-1rem] z-20' : 'h-[.4em] w-[1em]'}`}/>
+                <div className='lg:hidden flex h-[50%] flex-col items-center justify-between cursor-pointer mr-5' onClick={handleClick}>
+                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-45 h-[.3em] w-[1.9em] translate-y-[0.24rem] z-20' : 'h-[.4em] w-[1.9em]'}`}/>
+                    <div className={`bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? '' : 'h-[.4em] w-[1.2em]'}`}/>
+                    <div className={` bg-main-gold rounded-[0.1em] duration-300 ${menuIsOpen ? 'rotate-[-45deg] h-[.3em] w-[1.9em] translate-y-[-1rem] z-20' : 'h-[.4em] w-[0.7em]'}`}/>
                 </div>
 
                 <div className={`lg:hidden ${menuIsOpen ? 'absolute h-[100vh] w-[100vw] inset-0' : 'hidden' }`}>
