@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="relative w-[100vw] min-h-[100vh] items-center xl:justify-center flex">
             <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}} lottieRef={landingRef}/>
             <div className="flex max-w-[90vw] flex-row relative gap-5">
-                <div className="flex flex-col h-full 2xl:mr-[400px] lg:pl-0 pl-10">
+                <div className="flex flex-col h-full xl:w-[90vw] mt-[10vh] pl-10">
                     <h1 className="lg:text-9xl text-white sm:text-8xl text-6xl">Get More <br/><span className="font-bold">Leads</span> and <span className="font-bold">Sales</span></h1>
 
                     <p className="sm:text-xl sm:mt-10 mt-4 text-white">Request a free consultation, and we'll help you reach your<br/>dream revenue figures. With Apollo, you will be rest assured <br/>that your business will skyrocket.</p>
