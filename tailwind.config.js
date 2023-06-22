@@ -12,7 +12,7 @@ module.exports = {
         // => @media (min-width: 992px) { ... }
       },
       colors: {
-        'main-gold': '#EFB55A',
+        'main-gold': '#FFBC53',
         'nav-grey': '#626262',
         'main-black': '#1A1A1A'
       },

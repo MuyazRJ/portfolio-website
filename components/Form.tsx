@@ -118,7 +118,7 @@ const Form = () => {
                 </div>
 
                 <div className="">
-                    <input type="submit" className="bg-[#171717] text-white px-20 py-4 rounded-md shadow-lg hover:scale-110 duration-200 cursor-pointer" disabled={isDisabled}/>
+                    <input type="submit" className="bg-[#171717] text-white px-20 py-4 text-bold rounded-md shadow-lg hover:scale-110 duration-200 cursor-pointer" disabled={isDisabled}/>
                 </div>
             </form>
 
