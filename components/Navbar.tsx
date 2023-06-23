@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div className='relative lg:w-[60px] flex justify-start w-[49px] ml-4 lg:ml-8 xl:flex-1'><Link href='/' className=''>
                     <Image
                         src="/nav_logo.png"
-                        alt='apollo logo'
+                        alt='arctech logo'
                         className='object-contain'
                         width={65}
                         height={16}
