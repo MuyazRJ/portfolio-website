@@ -46,3 +46,24 @@
 .benefits-sizing {
   @apply md:flex-row flex-col-reverse;
 }
+
+/* Scrollbar modification */
+
+ ::-webkit-scrollbar {
+    width: 6px;
+} 
+
+/* Track */
+ ::-webkit-scrollbar-track {
+    background-color: #1A1A1A;
+} 
+
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+    background-color: #7EB3CE;
+} 
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #94c0d6;
+} 

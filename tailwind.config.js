@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      flex: {
+        '2': '2 2 0%'
+      },
       screens: {
         'md1': '822px',
         // => @media (min-width: 992px) { ... }

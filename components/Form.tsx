@@ -6,6 +6,7 @@ import { Fragment, useState } from 'react'
 
 import SpaceParticles from "./SpaceParticles";
 import emailjs from '@emailjs/browser';
+import TextReveal from "@/motion/TextReveal";
 
 const Form = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -99,28 +100,30 @@ const Form = () => {
 
     return ( 
         <div className="flex flex-col w-full xl:mt-[10rem] relative justify-center items-center pb-[50px] shadow-xl bg-main-black z-10 mt-[4rem]">
-            <h2 className="font-bold md:text-7xl max-w-[70%] text-white text-center mt-14 [text-shadow:_0_0_10px_rgb(255_255_255_/_44%)] text-5xl">We will show you what works</h2>
-            <h4 className="md:text-5xl font-bold text-gray-300 mt-5 [text-shadow:_0_0_10px_rgb(255_255_255_/_34%)] text-4xl">(For Free)</h4>
+            <h2 className="font-bold md:text-7xl max-w-[70%] text-white text-center mt-14 [text-shadow:_0_0_10px_rgb(255_255_255_/_44%)] text-5xl"><TextReveal>We will show you what works</TextReveal></h2>
+            <h4 className="md:text-5xl font-bold text-gray-300 mt-5 [text-shadow:_0_0_10px_rgb(255_255_255_/_34%)] text-4xl"><TextReveal>(For Free)</TextReveal></h4>
 
-            <form action="" className="mt-16 bg-main-gold max-w-[1440px] flex flex-col sm:px-16 pb-4 pt-12 rounded-[2rem] justify-center items-center gap-6 p-8" onSubmit={e => handleSubmit(e)}>
-                <div className="flex justify-between w-full gap-6 sm:flex-row flex-col">
-                    <input type="text" name="name" placeholder="name" className={`input-box ${emptyName ? 'border-2 border-red-500': ''} ${(emptyName && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
-                    <input type="text" name="business name" placeholder="business name" className="input-box" maxLength={50} value={business} onChange={e => setBusiness(e.target.value)}/>
-                </div>
+            <TextReveal>
+              <form action="" className="mt-16 bg-main-gold max-w-[1440px] flex flex-col sm:px-16 pb-4 pt-12 rounded-[2rem] justify-center items-center gap-6 p-8" onSubmit={e => handleSubmit(e)}>
+                  <div className="flex justify-between w-full gap-6 sm:flex-row flex-col">
+                      <input type="text" name="name" placeholder="name" className={`input-box ${emptyName ? 'border-2 border-red-500': ''} ${(emptyName && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={name} onChange={e => setName(e.target.value)}/>
+                      <input type="text" name="business name" placeholder="business name" className="input-box" maxLength={50} value={business} onChange={e => setBusiness(e.target.value)}/>
+                  </div>
 
-                <div className="flex justify-between w-full gap-6 sm:flex-row flex-col">
-                    <input type="text" name="email" placeholder="email" className={`input-box ${emptyEmail ? 'border-2 border-red-500': ''} ${(emptyEmail && useAnimation) ? 'animate-wiggle': ''}`} maxLength={100} value={email} onChange={e => setEmail(e.target.value)}/>
-                    <input type="text" name="phone" placeholder="phone" className={`input-box ${emptyPhone ? 'border-2 border-red-500': ''} ${(emptyPhone && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={phone} onChange={e => setPhone(e.target.value)}/>
-                </div>
+                  <div className="flex justify-between w-full gap-6 sm:flex-row flex-col">
+                      <input type="text" name="email" placeholder="email" className={`input-box ${emptyEmail ? 'border-2 border-red-500': ''} ${(emptyEmail && useAnimation) ? 'animate-wiggle': ''}`} maxLength={100} value={email} onChange={e => setEmail(e.target.value)}/>
+                      <input type="text" name="phone" placeholder="phone" className={`input-box ${emptyPhone ? 'border-2 border-red-500': ''} ${(emptyPhone && useAnimation) ? 'animate-wiggle': ''}`} maxLength={50} value={phone} onChange={e => setPhone(e.target.value)}/>
+                  </div>
 
-                <div className="flex w-full">
-                    <textarea name="message" placeholder="message" className={`outline-none flex-1 p-4 rounded-md h-[15rem] resize-none ${emptyMessage ? 'border-2 border-red-500': ''} ${(emptyMessage && useAnimation) ? 'animate-wiggle': ''}`} maxLength={1000} value={message} onChange={e => setMessage(e.target.value)}/>
-                </div>
+                  <div className="flex w-full">
+                      <textarea name="message" placeholder="message" className={`outline-none flex-1 p-4 rounded-md h-[15rem] resize-none ${emptyMessage ? 'border-2 border-red-500': ''} ${(emptyMessage && useAnimation) ? 'animate-wiggle': ''}`} maxLength={1000} value={message} onChange={e => setMessage(e.target.value)}/>
+                  </div>
 
-                <div className="">
-                    <input type="submit" className="bg-[#171717] text-white px-20 py-4 text-bold rounded-md shadow-lg hover:scale-110 duration-200 cursor-pointer" disabled={isDisabled}/>
-                </div>
-            </form>
+                  <div className="">
+                      <input type="submit" className="bg-[#171717] text-white px-20 py-4 text-bold rounded-md shadow-lg hover:scale-110 duration-200 cursor-pointer" disabled={isDisabled}/>
+                  </div>
+              </form>
+            </TextReveal>
 
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-10" onClose={closeModal}>

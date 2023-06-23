@@ -5,16 +5,24 @@ import { Link } from "react-scroll/modules";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from '../animations/landing.json'
 import { useEffect, useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Hero = () => {
+    const ref = useRef(null)
     const landingRef = useRef<LottieRefCurrentProps>(null)
+    const landingIsInView = useInView(ref)
 
     useEffect(() => {
         landingRef.current?.setSpeed(0.5)
     }, [])
 
+    useEffect(() => {
+        if (landingIsInView) landingRef.current?.play()
+        else landingRef.current?.pause()
+    }, [landingIsInView])
+
     return (
-        <div className="relative w-[100vw] min-h-[100vh] items-center xl:justify-center flex">
+        <div className="relative w-[100vw] min-h-[100vh] items-center xl:justify-center flex" ref={ref}>
             <Lottie autoPlay={true} loop={true} animationData={animationData} className="absolute h-full w-[full] inset-0 -z-10" rendererSettings={{preserveAspectRatio: 'xMidYMid slice'}} lottieRef={landingRef}/>
             <div className="flex max-w-[90vw] flex-row relative gap-5">
                 <div className="flex flex-col h-full xl:w-[90vw] mt-[10vh] pl-10">
