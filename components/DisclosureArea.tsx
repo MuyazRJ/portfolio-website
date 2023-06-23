@@ -34,7 +34,7 @@ export default function DisclosureArea() {
               <Disclosure.Panel className="disclosure-text duration-300">
               We begin with consulting with you on your business and all the things you want to optimise. We analyse how we can present your business against your competitors, and analyse the advantages we can make. Then our teams go through an extensive list of structures and designs to work out which works best. 
                     <br></br><br></br>
-              After your website design is complete, a split testing is done to decide how effective it is and make it even better. Lastly we will launch your website and you get to relax more and work less. Contact us here 
+              After your website design is complete, a split testing is done to decide how effective it is and make it even better. Lastly we will launch your website and you get to relax more and work less. Contact us here. 
               </Disclosure.Panel>
               </Transition>
             </>
@@ -61,7 +61,7 @@ export default function DisclosureArea() {
               >
               <Disclosure.Panel className="disclosure-text duration-300">
               We will communicate via an initial email, and then agree on a call or message, or whichever works best for you.
-              Receive your initial email by contacting us here
+              Receive your initial email by contacting us here.
               </Disclosure.Panel>
               </Transition>
             </>
@@ -88,7 +88,7 @@ export default function DisclosureArea() {
               >
               <Disclosure.Panel className="disclosure-text duration-300">
               Once you get in contact with us, we will consult with you and decide a price based on your budget, business goals
-              and time frame. Get in contact with us here
+              and time frame. Get in contact with us here.
               </Disclosure.Panel>
               </Transition>
             </>
