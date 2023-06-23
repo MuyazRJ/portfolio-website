@@ -32,8 +32,7 @@ module.exports = {
         leave: {
           '100%' : { transform: 'translateX(100%)' },
           '0%': { transform: 'translateX(0)' },
-        }
-        
+        },
       },
       animation: {
         wiggle: 'wiggle 0.18s 2',

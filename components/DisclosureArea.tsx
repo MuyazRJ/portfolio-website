@@ -24,7 +24,7 @@ export default function DisclosureArea() {
                 />
               </Disclosure.Button>
               <Transition
-                enter="transition duration-[400ms] ease-out"
+                enter="transition duration-[600ms] ease-out"
                 enterFrom="transform scale-90 opacity-0"
                 enterTo="transform scale-100 opacity-100"
                 leave="transition duration-[300ms] ease-out"
@@ -32,7 +32,9 @@ export default function DisclosureArea() {
                 leaveTo="transform scale-95 opacity-0"
               >
               <Disclosure.Panel className="disclosure-text duration-300">
-                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked 
+              We begin with consulting with you on your business and all the things you want to optimise. We analyse how we can present your business against your competitors, and analyse the advantages we can make. Then our teams go through an extensive list of structures and designs to work out which works best. 
+                    <br></br><br></br>
+              After your website design is complete, a split testing is done to decide how effective it is and make it even better. Lastly we will launch your website and you get to relax more and work less. Contact us here 
               </Disclosure.Panel>
               </Transition>
             </>
@@ -58,7 +60,8 @@ export default function DisclosureArea() {
                 leaveTo="transform scale-95 opacity-0"
               >
               <Disclosure.Panel className="disclosure-text duration-300">
-                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked jk y ghj fghjfghj fg
+              We will communicate via an initial email, and then agree on a call or message, or whichever works best for you.
+              Receive your initial email by contacting us here
               </Disclosure.Panel>
               </Transition>
             </>
@@ -84,7 +87,8 @@ export default function DisclosureArea() {
                 leaveTo="transform scale-95 opacity-0"
               >
               <Disclosure.Panel className="disclosure-text duration-300">
-                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked s
+              Once you get in contact with us, we will consult with you and decide a price based on your budget, business goals
+              and time frame. Get in contact with us here
               </Disclosure.Panel>
               </Transition>
             </>
@@ -94,7 +98,7 @@ export default function DisclosureArea() {
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosure-box">
-                <span className='text-xl'>What happens when I get in contact?</span>
+                <span className='text-xl'>What web technologies do you use?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
@@ -110,7 +114,7 @@ export default function DisclosureArea() {
                 leaveTo="transform scale-95 opacity-0"
               >
               <Disclosure.Panel className="disclosure-text duration-300">
-                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked sha
+                We leverage the cutting-edge and highly sought-after framework Next.js, which combines the power of React with robust backend development capabilities through Express.js.
               </Disclosure.Panel>
               </Transition>
             </>
@@ -120,7 +124,7 @@ export default function DisclosureArea() {
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosure-box">
-                <span className='text-xl'>What happens when I get in contact?</span>
+                <span className='text-xl'>Do you offer responsive design to ensure websites work well on mobile devices?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? 'rotate-180 transform' : ''
@@ -136,7 +140,7 @@ export default function DisclosureArea() {
                 leaveTo="transform scale-95 opacity-0"
               >
               <Disclosure.Panel className="disclosure-text duration-300">
-                If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked sha
+                Yes, we offer responsive design services to ensure that websites work seamlessly and provide an optimal user experience across various devices, including mobile phones, tablets, and desktops.<br/><br/> Our team of web developers understands the importance of responsive design in today's mobile-driven world.
               </Disclosure.Panel>
               </Transition>
             </>
